@@ -1,41 +1,563 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - Trello Clone</title>
-  <link rel="stylesheet" href="./style.css">
-
+    <meta charset="UTF-8">
+    <title>CodePen - Trello Clone</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="https://kit.fontawesome.com/710549ee58.js" crossorigin="anonymous"></script>
 </head>
-<body>
-<!-- partial:index.partial.html -->
-<div id="main">
-  <div class="list">
-    <div class="title removable editable">This is a list</div>
-    <div class="content">
-      <div class="card removable editable">This is a card</div>
-      <div class="card removable editable" style="">Look, another card!</div>
-    </div>
-    <div class="add-card editable">Add another card</div>
-  </div>
-  <div class="list">
-    <div class="title removable editable">Another list</div>
-    <div class="content">
-      <div class="card removable editable">Hello world!</div>
-    </div>
-    <div class="add-card editable">Add another card</div>
-  </div>
-  <div class="list">
-    <div class="title removable editable">Empty list</div>
-    <div class="content"></div>
-    <div class="add-card editable">Add another card</div>
-  </div>
-</div>
 
-<div class="add-list">
-  <div class="title editable">Add another list</div>
-</div>
-<!-- partial -->
-  <script src='https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js'></script><script  src="./script.js"></script>
+<body>
+    <!-- partial:index.partial.html -->
+    <div id="main">
+        <!-- PRODUCT BACKLOG -->
+        <div class="list list-orange">
+            <div class="title removable editable">Product Backlog</div>
+            <div class="content">
+
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-red">BACK-END</div>
+                        <div class="task">create API for empty seats</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">28 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">John Smith</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-green">QA</div>
+                        <div class="task">Test bus location component</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">22 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">John Tester</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-green">QA</div>
+                        <div class="task">Test seat availability component</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">24 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">John Tester</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-green">QA</div>
+                        <div class="task">Alpha test</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">28 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">John Tester</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-green">QA</div>
+                        <div class="task">Beta test</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">02 JUL</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">John Tester</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="add-card editable">Add another card</div>
+        </div>
+
+        <!-- CURRENT SPRINT BACKLOG -->
+        <div class="list list-green">
+            <div class="title removable editable">Current Sprint Backlog</div>
+            <div class="content">
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-red">BACK-END</div>
+                        <div class="task">create API for stations</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">18 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">John Smith</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-orange">UI/UX</div>
+                        <div class="task">Create mockups for next bus</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">16 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">Paul Cohen</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-blue">FRONT-END</div>
+                        <div class="task">create UI for bus location</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">18 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">Brian Adam</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-green">QA</div>
+                        <div class="task">Test search functionality</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">20 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">John Tester</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="add-card editable">Add another card</div>
+        </div>
+
+        <!-- IN PROGRESS -->
+        <div class="list list-purple">
+            <div class="title removable editable">In Progress</div>
+            <div class="content">
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-red">BACK-END</div>
+                        <div class="task">create API for buses component</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">15 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">John Smith</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-orange">UI/UX</div>
+                        <div class="task">Create mockups for bus display</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">13 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">Paul Cohen</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-blue">FRONT-END</div>
+                        <div class="task">create UI for empty seats</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">14 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">Brian Adam</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-green">QA</div>
+                        <div class="task">Test bus location</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">15 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">John Tester</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="add-card editable">Add another card</div>
+        </div>
+
+        <!-- REVIEW -->
+        <div class="list list-blue">
+            <div class="title removable editable">Review</div>
+            <div class="content">
+
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-blue">FRONT-END</div>
+                        <div class="task">Create UI for bus location</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">12 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">Brian Adam</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-red">BACK-END</div>
+                        <div class="task">create API for bus location</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">08 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">John Smith</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-red">BACK-END</div>
+                        <div class="task">create api for search</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">10 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">John Smith</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-green">QA</div>
+                        <div class="task">Write test cases</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">12 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">Mike Malone</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="add-card editable">Add another card</div>
+        </div>
+
+        <!-- DONE -->
+        <div class="list list-red">
+            <div class="title removable editable">Done</div>
+            <div class="content">
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-blue">FRONT-END</div>
+                        <div class="task">Set up Front end environment</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">1 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">Brian Adam</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-red">BACK-END</div>
+                        <div class="task">Set up Back end environment</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">1 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">John Smith</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-orange">UI/UX</div>
+                        <div class="task">Create design prototypes</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">1 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">Paul Cohen</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-red">BACK-END</div>
+                        <div class="task">Create database model</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">3 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">John Smith</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-red">BACK-END</div>
+                        <div class="task">Create database</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">5 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">John Smith</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-orange">UI/UX</div>
+                        <div class="task">Create mockups for search</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">5 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">Paul Cohen</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-green">QA</div>
+                        <div class="task">Set up QA environment</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">1 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">John Tester</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-blue">FRONT-END</div>
+                        <div class="task">Create search front end</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">4 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">Brian Adam</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-red">BACK-END</div>
+                        <div class="task">Hook back end with database</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">6 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">John Smith</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card removable editable flex-container">
+                    <div class="flex-item">
+                        <div class="label label-blue">FRONT-END</div>
+                        <div class="task">Create select bus ui</div>
+                        <div class="bottom">
+                            <div class="time-limit">
+                                <i class="fa-regular fa-clock"></i>
+                                <div class="date">7 MAY</div>
+                            </div>
+                            <div class="user">
+                                <div class="user-name">Brian Adam</div>
+                                <i class="fa-solid fa-user-astronaut user-icon "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="add-card editable">Add another card</div>
+        </div>
+        <div class="list list-grey">
+            <div class="title removable editable">Additional Resources</div>
+            <div class="content"></div>
+            <div class="add-card editable">Add another card</div>
+        </div>
+
+    </div>
+
+    <div class="add-list">
+        <div class="title editable">Add another list</div>
+    </div>
+    <!-- partial -->
+    <script src='https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js'></script>
+    <script src="./script.js"></script>
 
 </body>
+
 </html>
